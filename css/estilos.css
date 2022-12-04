@@ -1,3 +1,6 @@
+nav{
+  z-index: 10;
+}
 nav>ul{
    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     position: fixed;
@@ -95,4 +98,43 @@ color: blueviolet;
 
 .footer-global>.direccion>.enlace-footer{
     color:red;
+}
+
+#imagenjuntotexto{
+  display: flex;
+  
+}
+
+::selection{
+  background: limegreen;
+  color:azure
+}
+
+div.cajacssabajo>p::first-letter {
+  font-size: 30px;
+  color: cornflowerblue; 
+}
+
+a[href^="https:"] {
+  padding-right: 2em;
+  background-image: url(/imagenes/enlaces.jpg) !important;
+  z-index: 3;
+  background-size: 1em;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+ol.skillsseo{
+  background-color: rgb(181, 185, 185);
+}
+
+ol.skillsseo>li::marker{
+  font-size: 40px;
+  color: rgb(53, 27, 30);
+  background: rgb(218, 225, 83);
+}
+
+[alt]{
+  border:10px solid greenyellow;
+  
 }
