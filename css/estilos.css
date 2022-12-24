@@ -1,9 +1,19 @@
+:root{
+--azul: rgb(0, 69, 84);  
+--colornav:radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+--colorfondocorporativo:radial-gradient(circle, rgba(251,63,203,1) 0%, rgba(244,143,222,1) 32%, rgba(243,155,225,1) 46%, rgba(243,159,226,1) 77%, rgba(236,237,245,1) 100%);
+}
+
+body {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 400;
+
+}
 nav{
   z-index: 10;
 }
 nav>ul{
-   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-    position: fixed;
+   background: var(--colornav);
     list-style: none;
     display: flex;
     align-items: center;
@@ -15,12 +25,14 @@ nav>ul{
 }
 
 html{
-  background: radial-gradient(circle, rgba(251,63,203,1) 0%, rgba(244,143,222,1) 32%, rgba(243,155,225,1) 46%, rgba(243,159,226,1) 77%, rgba(236,237,245,1) 100%);}
+  background: var(--colorfondocorporativo);
+}
 
 h1.h1grande{
     color:rgb(36, 35, 37);
     margin-top: 40px;
     font-size: 40px;
+    font-family: 'Catamaran', sans-serif;
 }
 nav>ul>li>a{
     color:rgb(0, 0, 0);
@@ -35,6 +47,7 @@ nav>ul>li>a:hover {
 h2.h2violeta {
     animation-duration: 3s;
     animation-name: movimiento-letras;
+    font-family: 'Catamaran', sans-serif;
   }
   
   @keyframes movimiento-letras {
@@ -61,7 +74,7 @@ h2.h2violeta {
 }
 
 table#tabla-elementos-html th{
-    color:blue;
+    color:var(--azul);
 }
 
 
@@ -82,7 +95,7 @@ table#tabla-elementos-html td{
 blockquote{
     font-style: oblique;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgb(87, 171, 244);
+    background-color: var(--azul);
 }
 
 /*Estilos del footer*/
@@ -112,7 +125,7 @@ color: blueviolet;
 
 div.cajacssabajo>p::first-letter {
   font-size: 30px;
-  color: cornflowerblue; 
+  color: var(--azul); 
 }
 
 a[href^="https:"] {
@@ -137,4 +150,12 @@ ol.skillsseo>li::marker{
 [alt]{
   border:10px solid greenyellow;
   
+}
+
+/* Responsive */
+@media all and (min-width: 400px) and (max-width: 800px){
+  *{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:blueviolet;
+  }
 }
