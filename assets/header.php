@@ -1,10 +1,12 @@
-<head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html>
+    <head>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8"/>
+  <!-- Aqui se van a incluir las fuentes de Catamaran   -->
+
+  <link href="/css/fonts-minificado.css" rel="stylesheet">
         <link rel="stylesheet" href="/css/estilos.css"/>
         <title>Primera página HTML del master</title>
         <meta name="description" content="Página de inicio de Juan Álvarez" />
@@ -15,9 +17,9 @@
         <nav>
             <ul>
                 <li><a href="/">Inicio</a></li>
-                <li><a href="/sobre-mi.html">Sobre mi</a></li>
-                <li><a href="/contacto.html">Contacto</a></li>
-                <li><a href="/carpeta/pagina-carpeta.html">Otros datos de interes</a></li>
+                <li><a href="/sobre-mi.php">Sobre mi</a></li>
+                <li><a href="/contacto.php">Contacto</a></li>
+                <li><a href="/carpeta/pagina-carpeta.php">Otros datos de interes</a></li>
                 <li><a href="https://www.linkedin.com/in/juan-alvarez-gayoso/" target="_blank">Redes Sociales</a></li>
             </ul>
         </nav>

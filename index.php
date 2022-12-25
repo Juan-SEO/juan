@@ -1,31 +1,33 @@
-<!DOCTYPE html>
-<html>
-    <head>
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8"/>
-  <!-- Aqui se van a incluir las fuentes de Catamaran   -->
-
-  <link href="/css/fonts-minificado.css" rel="stylesheet">
-        <link rel="stylesheet" href="/css/estilos.css"/>
-        <title>Primera página HTML del master</title>
-        <meta name="description" content="Página de inicio de Juan Álvarez" />
-    </head>
-<body>
-    <!-- Aquí va el menú -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/">Inicio</a></li>
-                <li><a href="/sobre-mi.html">Sobre mi</a></li>
-                <li><a href="/contacto.html">Contacto</a></li>
-                <li><a href="/carpeta/pagina-carpeta.html">Otros datos de interes</a></li>
-                <li><a href="https://www.linkedin.com/in/juan-alvarez-gayoso/" target="_blank">Redes Sociales</a></li>
-            </ul>
-        </nav>
-    </header>
+?>
 <section style="border:solid black 50%;">
-        <h1 class="h1grande">Página de inicio de Juan Álvarez</h1>
+        <h1 class="h1grande"><?php echo "Página de inicio de Juan Álvarez" ?></h1>
+        <h2><?php echo date("D/M/Y"); ?></h2>
+        <?php echo "<h1> Hola </h1>";
+        $juan = "Juan";
+    
+        echo "<p>Esta es la página de $juan</p>" ;
+
+        $seo = "posicion en Google";
+        $sem = "posicion pagada en Google";
+
+        if($seo == $sem){
+            echo 'SEO y SEM son iguales';
+        }
+
+        elseif($seo === $sem){
+            echo 'Son identicos SEO y SEM';
+        }
+
+        else{
+            echo 'No son iguales SEO y SEM';
+        }
+
+    
+        ?>
+
         <h2 class="h2violeta" style="font-size: 20px;color:blueviolet">En esta página podemos ver las prácticas de desarrollo</h2>
         <div>Esto no es un h1 </div>
         <p>Esto es un parrafo</p>
@@ -89,13 +91,7 @@ Cada dia sabemos un poco más<br></p>
 </div>
 
 
-<footer class="footer-global">
-        <address class="direccion">
-            &copy;
-       <a class="enlace-footer" href="mailto:jalgazam@gmail.com">Juan Alvarez Gayoso</a>
-        </address>
-<a href="tel:678546789">llamra</a>
-</footer>
-</body>
-</html>
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';
+?>
 
